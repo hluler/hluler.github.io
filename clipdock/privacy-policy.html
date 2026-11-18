@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ClipDock Chrome Extension Privacy Policy — AiSiFun</title>
+    <style>
+      body {
+        max-width: 850px;
+        margin: 40px auto;
+        padding: 0 20px;
+        font: 16px/1.7 system-ui;
+        color: #14383d;
+      }
+      p {
+        white-space: normal;
+        overflow-wrap: anywhere;
+      }
+      h2 {
+        margin-top: 2em;
+      }
+      a {
+        color: #6750a4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ClipDock Chrome Extension Privacy Policy</h1>
+    <p>
+      Product: 拾影 ClipDock · 网页视频保存<br />Developer: AiSiFun<br />Effective
+      date: 18 November 2026<br />Version scope: Chrome extension 1.0.0<br />Contact:
+      <a href="mailto:leo344937116@gmail.com">leo344937116@gmail.com</a
+      ><br />Policy:
+      <a href="https://hluler.github.io/clipdock/privacy-policy.html"
+        >https://hluler.github.io/clipdock/privacy-policy.html</a
+      >
+    </p>
+    <p>
+      This policy covers the standalone Chrome extension. The ClipDock Windows
+      desktop app is a separate product with different capabilities. The Chrome
+      extension does not support YouTube or Google video sources, DRM, encrypted
+      media, HLS/DASH segment assembly, or audio/video track merging. Only save
+      content you own or are permitted to save. It has no account, advertising,
+      analytics, paid service, or developer-operated download server.
+    </p>
+    <h2>1. User-initiated page scanning</h2>
+    <p>
+      Only after you click Scan current page, the extension uses activeTab and
+      scripting to read the active page's title and URL, video/source elements,
+      video metadata, video-file links, selected video metadata tags, and names
+      of resources already recorded by that page's Performance API. These
+      resources can include signed media URLs containing query parameters or
+      access tokens. This is local processing of website content and web
+      browsing activity for the visible scan-and-save feature. It does not
+      access your general browsing history, read page forms or messages, read
+      passwords or browser cookies, inspect HTTP response bodies, install
+      network interception software, or run scripts fetched from a remote
+      server. The scan script runs once in an isolated browser world and does
+      not monitor future browsing.
+    </p>
+    <h2>2. User-provided links and download records</h2>
+    <p>
+      Text or UTF-8 TXT files you choose to import are read locally to extract
+      video file URLs. Only the selected video URLs and associated titles, file
+      types, job IDs, timestamps, download IDs, byte counts, statuses and error
+      messages are used to operate your queue. Full URLs, including any signed
+      query parameters, are kept in extension-local browser storage to operate
+      queued jobs and retries. The latest page scan is kept in browser session
+      storage until cleared, replaced or the browser session ends. Imported TXT
+      contents and unsubmitted text are kept only in the popup's memory. No
+      Chrome storage sync is used.
+    </p>
+    <p>
+      The extension retains at most 300 job records, trimming older finished
+      records as new work is added. On background startup it removes finished
+      records older than seven days; active and queued work is retained. This is
+      not a guarantee that all copies disappear exactly at seven days. Chrome
+      independently retains its download history and downloaded files under
+      Chrome settings. Popup views omit URL query parameters from displayed task
+      sources, but local stored URLs may remain sensitive. Do not import secret
+      links you do not intend to use.
+    </p>
+    <h2>3. Downloads and recipients</h2>
+    <p>
+      After you select candidates and confirm your right to save them, Chrome's
+      downloads API requests the chosen files directly from their source
+      servers. Requests may contain URL parameters you supplied or obtained from
+      the page, standard browser connection data such as IP address and user
+      agent, and applicable session information automatically attached by Chrome
+      under its own settings. The extension does not read, export or separately
+      send browser cookies or passwords. The source website/CDN and any redirect
+      destination receive requests necessary to deliver the file and apply their
+      own policies. The extension adds no proxy, custom authentication headers,
+      analytics endpoint or developer media upload. HTTPS is recommended; a
+      user-selected HTTP source is unencrypted.
+    </p>
+    <p>
+      The extension rejects known Google/YouTube source URLs before scanning and
+      downloading, and checks final response URLs and MIME types when Chrome
+      determines a download target and updates the result. Rejected downloads
+      are cancelled; the extension attempts to remove its own rejected file if
+      it completed before cancellation. Chrome may already have contacted a
+      redirect destination before providing the final URL; this is not a network
+      traffic filter or a guarantee that no request is sent there. Normal
+      browser visits are unaffected. The exclusion cannot identify every
+      third-party mirror or custom domain and is not permission to bypass
+      platform restrictions.
+    </p>
+    <h2>4. Permissions and local control</h2>
+    <p>
+      activeTab grants temporary access when you invoke the extension. scripting
+      executes the one-time media scan. downloads starts, checks, cancels,
+      retries and locates this extension's jobs and cleans rejected results; the
+      code queries known task IDs and narrowly matches interrupted-start
+      records, rather than listing your general download history. storage saves
+      local settings, task records and session scan results. No permanent
+      all-sites host access, network interception, cookies, history, debugger,
+      nativeMessaging, clipboard or account permission is requested.
+    </p>
+    <p>
+      Clear scan removes the latest scan cache. Clear finished records removes
+      finished jobs from this extension but does not delete files or Chrome's
+      download history. It does not cancel active downloads. Cancel all stops
+      this extension's queued/active work. You can remove the extension to
+      remove its local settings and records; downloaded files and Chrome history
+      remain under your control. Manage those separately in Chrome and your file
+      manager. Browser/profile backups or device sync services you enable may
+      preserve their own copies.
+    </p>
+    <h2>5. Disclosure, security and limited use</h2>
+    <p>
+      AiSiFun does not receive your scanned pages, video URLs, imported text,
+      download history or media through this extension, and does not sell or
+      transfer them for advertising, profiling, creditworthiness or unrelated
+      purposes. User data is used only to provide the extension's stated
+      scan-and-save functionality, consistent with the Chrome Web Store User
+      Data Policy, including its Limited Use requirements. No developer
+      personnel can read your local task data through an extension service.
+      Local records use Chrome profile storage and OS account protections; they
+      are not a password vault and no absolute security is promised.
+    </p>
+    <h2>6. Policy website, support and changes</h2>
+    <p>
+      Opening the online policy or product website visits GitHub Pages, which
+      may process normal website request information under
+      <a
+        href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+        >GitHub's privacy statement</a
+      >. The packaged policy/help pages load no external scripts or analytics.
+      If you email support, we receive only the email, message and attachments
+      you choose to send, use them to answer your request, and retain
+      correspondence only as needed to resolve it or comply with applicable
+      obligations. Avoid sending signed URLs, credentials or sensitive media.
+      Request access, correction or deletion of information you send us at the
+      contact above. Changes will appear at this policy URL with an updated
+      effective date; source websites and Chrome control their own records.
+    </p>
+    <h1 lang="zh-CN">拾影 Chrome 扩展隐私政策</h1>
+    <div lang="zh-CN">
+      <p>
+        产品：拾影 ClipDock · 网页视频保存<br />开发者：AiSiFun<br />生效日期：2026年11月18日<br />适用版本：Chrome
+        扩展 1.0.0<br />联系方式：leo344937116@gmail.com<br />政策网址：https://hluler.github.io/clipdock/privacy-policy.html
+      </p>
+      <p>
+        本政策适用于独立 Chrome 扩展。Windows 桌面版为功能不同的独立产品。Chrome
+        版不支持 YouTube 或 Google 视频来源、DRM、加密媒体、HLS/DASH
+        分段组装及音画分轨合并。仅保存自己拥有或已获准保存的内容。本扩展无需应用账号，不含广告、统计、付费服务或开发者下载中转服务器。
+      </p>
+      <h2>1. 用户主动扫描网页</h2>
+      <p>
+        只有点击“扫描当前页”后，扩展才通过 activeTab 和 scripting
+        读取当前页标题和网址、video/source
+        元素、视频元数据、视频文件链接、相关视频元数据标签，以及该页面
+        Performance API
+        已记录的资源名称。其中可能包含带查询参数或访问令牌的签名媒体网址。这是为可见的扫描和保存功能在本地处理网页内容和浏览活动。扩展不读取完整浏览历史、表单、消息、密码、浏览器
+        Cookies
+        或网络响应正文，不安装网络拦截软件，不运行远程下载的脚本。扫描脚本在隔离环境执行一次，不持续监控后续浏览。
+      </p>
+      <h2>2. 导入链接与下载记录</h2>
+      <p>
+        您选择输入的文本或 UTF-8 TXT
+        文件仅在本地提取视频文件网址。队列使用所选网址、标题、文件类型、任务标识、时间、Chrome
+        下载
+        ID、字节数、状态和错误消息。完整网址（可能含签名查询参数）保存在扩展本地浏览器存储中，以执行排队任务和重试。最新扫描结果保存在浏览器会话存储，直至清空、替换或浏览器会话结束。TXT
+        原文及尚未提交的文本只保存在弹窗内存，不使用 Chrome 云同步存储。
+      </p>
+      <p>
+        扩展最多保留 300
+        条任务，新任务加入时淘汰较早的已结束记录。后台启动时清理超过七天的已结束记录，保留活动和等待任务；这不代表所有副本会在第七天准时删除。Chrome
+        按自身设置独立保存下载历史和文件。任务来源显示时省略查询参数，但本地完整网址仍可能是敏感信息，请勿导入不打算使用的私密链接。
+      </p>
+      <h2>3. 下载与接收方</h2>
+      <p>
+        您选择视频并确认保存权限后，由 Chrome 下载 API
+        直接请求原始来源服务器。请求可能包含您提供或页面取得的网址参数、IP
+        和浏览器标识等连接信息，以及 Chrome
+        按自身设置自动附加的适用会话信息。扩展不读取、导出或另行发送 Cookies
+        和密码。来源网站、CDN
+        及必要的重定向接收方按其政策处理传输请求。扩展不添加代理、自定义认证请求头、统计接口或开发者媒体上传。建议使用
+        HTTPS；用户选择的 HTTP 来源不会加密。
+      </p>
+      <p>
+        扩展会在扫描和下载前拒绝已知 Google/YouTube 来源，并在 Chrome
+        确定下载目标和更新结果时检查最终响应网址及媒体类型。被拒绝的下载会取消；如果响应在取消前已完成，扩展会尝试清理自己产生的异常文件。Chrome
+        可能在提供最终网址前已联系重定向服务器，因此这不是流量过滤器，也不保证完全不向目的地发出请求。普通网页浏览不受影响。排除机制无法识别所有第三方镜像或自定义域名，也不表示可以绕过平台限制。
+      </p>
+      <h2>4. 权限和本地控制</h2>
+      <p>
+        activeTab 在调用扩展时提供临时当前页权限；scripting
+        执行一次性扫描；downloads
+        启动、检查、取消、重试和定位本扩展任务，并清理被拒绝的响应，代码按已知任务
+        ID 或中断启动记录的精确条件查询，不列出完整下载历史；storage
+        保存本地设置、任务和会话扫描。不申请永久全站访问、网络拦截、Cookies、浏览历史、调试器、本地程序通信、剪贴板或账号权限。
+      </p>
+      <p>
+        “清空扫描”删除最新扫描缓存；“清空已结束记录”删除扩展中的已结束任务，不删除文件或
+        Chrome
+        下载历史，也不取消活动任务。“全部取消”停止本扩展的活动和等待任务。卸载扩展会移除其本地记录和设置，已下载文件和
+        Chrome 历史需在 Chrome
+        或文件管理器中自行管理。您启用的浏览器配置备份或设备同步服务可能保留自己的副本。
+      </p>
+      <h2>5. 数据使用、安全与有限使用</h2>
+      <p>
+        开发者不会通过本扩展接收您的扫描网页、视频网址、导入文本、下载历史或媒体，不出售数据，不将其用于广告、画像、信用评估或无关目的。用户数据仅用于明确说明的网页视频扫描和保存功能，并遵守
+        Chrome Web Store
+        用户数据政策及有限使用要求。开发者人员无法通过扩展服务读取您的本地任务数据。记录依赖
+        Chrome 配置存储及操作系统账号保护，不是密码保险库，也不承诺绝对安全。
+      </p>
+      <h2>6. 政策网站、支持与更新</h2>
+      <p>
+        打开在线政策或产品网站会访问 GitHub Pages，其运营方可能按 GitHub
+        隐私声明处理常规访问记录。扩展内置政策和帮助页面不加载外部脚本或统计。发送支持邮件时，开发者只收到您主动发送的邮箱、消息和附件，仅用于答复，并按解决问题或适用义务所需期限保存。请勿发送签名网址、凭证或敏感媒体。对于向开发者提供的信息，可通过上述邮箱申请访问、更正或删除。更新在同一政策网址发布并变更生效日期；来源网站和
+        Chrome 独立管理其记录。
+      </p>
+    </div>
+  </body>
+</html>
